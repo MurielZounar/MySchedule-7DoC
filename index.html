@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>MySchedule</title>
+    </head>
+    <body>
+        <header class="header">
+            <img
+                src="./assets/img/perfil-1.jpg"
+                alt="Foto de médica com pele negra, jaleco branco, estetoscópio pindurado no pescoço e cordão azul também pendurado no pescoço"
+                class="header__profile-img"
+            />
+            <div class="header__info">
+                <h2 class="info__hello">Olá, Sônia</h2>
+                <p class="info__text">Mais 4 consultas hoje</p>
+            </div>
+        </header>
+
+        <section class="today">
+            <h2 class="day__text">Hoje</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card__header">
+                        <img
+                            src="./assets/img/perfil-2.jpg"
+                            alt="foto de mulher"
+                            class="card__img"
+                        />
+
+                        <div class="card__header__data">
+                            <h3 class="card__name">Luciana Dias</h3>
+
+                            <div class="card__apointment-type">
+                                <img
+                                    src="./assets/img/camera.svg"
+                                    alt="ícone de câmera"
+                                    class="apointment-type__img"
+                                />
+                                <span class="apointment-type__text"
+                                    >Consulta remota</span
+                                >
+                            </div>
+                        </div>
+
+                        <img
+                            src="./assets/img/chat.svg"
+                            alt="ícone de balão de conversa"
+                            class="card__chat"
+                        />
+                    </div>
+
+                    <hr class="card__division" />
+
+                    <div class="card__options">
+                        <span class="card__time">14:00 - 15:00 (1 hora)</span>
+
+                        <div class="card__buttons">
+                            <a href="#" class="button video-call"
+                                >Ligar por vídeo</a
+                            >
+                            <a href="#" class="button phone-call"
+                                >Ligar por áudio</a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__header">
+                        <img
+                            src="./assets/img/perfil-3.jpg"
+                            alt="foto de mulher"
+                            class="card__img"
+                        />
+
+                        <div class="card__header__data">
+                            <h3 class="card__name">Larissa Santana</h3>
+
+                            <div class="card__apointment-type">
+                                <img
+                                    src="./assets/img/pin.svg"
+                                    alt="ícone de pin de endereço"
+                                    class="apointment-type__img"
+                                />
+                                <span class="apointment-type__text"
+                                    >Consulta no local</span
+                                >
+                            </div>
+                        </div>
+
+                        <img
+                            src="./assets/img/chat.svg"
+                            alt="ícone de balão de conversa"
+                            class="card__chat"
+                        />
+                    </div>
+
+                    <hr class="card__division" />
+
+                    <div class="card__options">
+                        <span class="card__time">16:00 - 17:00 (1 hora)</span>
+
+                        <div class="card__buttons">
+                            <a href="#" class="button adress">Ver endereço</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card last">
+                    <div class="card__header">
+                        <img
+                            src="./assets/img/perfil-4.jpg"
+                            alt="foto de homem"
+                            class="card__img"
+                        />
+
+                        <div class="card__header__data">
+                            <h3 class="card__name">Marcos Correia</h3>
+
+                            <div class="card__apointment-type">
+                                <img
+                                    src="./assets/img/camera.svg"
+                                    alt="ícone de câmera"
+                                    class="apointment-type__img"
+                                />
+                                <span class="apointment-type__text"
+                                    >Consulta remota</span
+                                >
+                            </div>
+                        </div>
+
+                        <img
+                            src="./assets/img/chat.svg"
+                            alt="ícone de balão de conversa"
+                            class="card__chat"
+                        />
+                    </div>
+
+                    <hr class="card__division" />
+
+                    <div class="card__options">
+                        <span class="card__time"
+                            >17:20 - 18:00 (40 minutos)</span
+                        >
+
+                        <div class="card__buttons">
+                            <a href="#" class="button video-call"
+                                >Ligar por vídeo</a
+                            >
+                            <a href="#" class="button phone-call"
+                                >Ligar por áudio</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tomorow">
+            <h2 class="day__text">Amanhã</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card__header">
+                        <img
+                            src="./assets/img/perfil-5.jpg"
+                            alt="foto de mulher"
+                            class="card__img"
+                        />
+
+                        <div class="card__header__data">
+                            <h3 class="card__name">Clara Lemos</h3>
+
+                            <div class="card__apointment-type">
+                                <img
+                                    src="./assets/img/pin.svg"
+                                    alt="ícone de pin de endereço"
+                                    class="apointment-type__img"
+                                />
+                                <span class="apointment-type__text"
+                                    >Consulta no local</span
+                                >
+                            </div>
+                        </div>
+
+                        <img
+                            src="./assets/img/chat.svg"
+                            alt="ícone de balão de conversa"
+                            class="card__chat"
+                        />
+                    </div>
+
+                    <hr class="card__division" />
+
+                    <div class="card__options">
+                        <span class="card__time">18:00 - 19:00 (1 hora)</span>
+
+                        <div class="card__buttons">
+                            <a href="#" class="button adress">Ver endereço</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__header">
+                        <img
+                            src="./assets/img/perfil-2.jpg"
+                            alt="foto de mulher"
+                            class="card__img"
+                        />
+
+                        <div class="card__header__data">
+                            <h3 class="card__name">Luciana Dias</h3>
+
+                            <div class="card__apointment-type">
+                                <img
+                                    src="./assets/img/camera.svg"
+                                    alt="ícone de câmera"
+                                    class="apointment-type__img"
+                                />
+                                <span class="apointment-type__text"
+                                    >Consulta remota</span
+                                >
+                            </div>
+                        </div>
+
+                        <img
+                            src="./assets/img/chat.svg"
+                            alt="ícone de balão de conversa"
+                            class="card__chat"
+                        />
+                    </div>
+
+                    <hr class="card__division" />
+
+                    <div class="card__options">
+                        <span class="card__time">14:00 - 15:00 (1 hora)</span>
+
+                        <div class="card__buttons">
+                            <a href="#" class="button video-call"
+                                >Ligar por vídeo</a
+                            >
+                            <a href="#" class="button phone-call"
+                                >Ligar por áudio</a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__header">
+                        <img
+                            src="./assets/img/perfil-4.jpg"
+                            alt="foto de homem"
+                            class="card__img"
+                        />
+
+                        <div class="card__header__data">
+                            <h3 class="card__name">Marcos Correia</h3>
+
+                            <div class="card__apointment-type">
+                                <img
+                                    src="./assets/img/camera.svg"
+                                    alt="ícone de câmera"
+                                    class="apointment-type__img"
+                                />
+                                <span class="apointment-type__text"
+                                    >Consulta remota</span
+                                >
+                            </div>
+                        </div>
+
+                        <img
+                            src="./assets/img/chat.svg"
+                            alt="ícone de balão de conversa"
+                            class="card__chat"
+                        />
+                    </div>
+
+                    <hr class="card__division" />
+
+                    <div class="card__options">
+                        <span class="card__time"
+                            >17:20 - 18:00 (40 minutos)</span
+                        >
+
+                        <div class="card__buttons">
+                            <a href="#" class="button video-call"
+                                >Ligar por vídeo</a
+                            >
+                            <a href="#" class="button phone-call"
+                                >Ligar por áudio</a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card last">
+                    <div class="card__header">
+                        <img
+                            src="./assets/img/perfil-3.jpg"
+                            alt="foto de mulher"
+                            class="card__img"
+                        />
+
+                        <div class="card__header__data">
+                            <h3 class="card__name">Larissa Santana</h3>
+
+                            <div class="card__apointment-type">
+                                <img
+                                    src="./assets/img/pin.svg"
+                                    alt="ícone de pin de endereço"
+                                    class="apointment-type__img"
+                                />
+                                <span class="apointment-type__text"
+                                    >Consulta no local</span
+                                >
+                            </div>
+                        </div>
+
+                        <img
+                            src="./assets/img/chat.svg"
+                            alt="ícone de balão de conversa"
+                            class="card__chat"
+                        />
+                    </div>
+
+                    <hr class="card__division" />
+
+                    <div class="card__options">
+                        <span class="card__time">16:00 - 17:00 (1 hora)</span>
+
+                        <div class="card__buttons">
+                            <a href="#" class="button adress">Ver endereço</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wednesday">
+            <h2 class="day__text">Quarta-feira</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card__header">
+                        <img
+                            src="./assets/img/perfil-5.jpg"
+                            alt="foto de mulher"
+                            class="card__img"
+                        />
+
+                        <div class="card__header__data">
+                            <h3 class="card__name">Clara Lemos</h3>
+
+                            <div class="card__apointment-type">
+                                <img
+                                    src="./assets/img/pin.svg"
+                                    alt="ícone de pin de endereço"
+                                    class="apointment-type__img"
+                                />
+                                <span class="apointment-type__text"
+                                    >Consulta no local</span
+                                >
+                            </div>
+                        </div>
+
+                        <img
+                            src="./assets/img/chat.svg"
+                            alt="ícone de balão de conversa"
+                            class="card__chat"
+                        />
+                    </div>
+
+                    <hr class="card__division" />
+
+                    <div class="card__options">
+                        <span class="card__time">18:00 - 19:00 (1 hora)</span>
+
+                        <div class="card__buttons">
+                            <a href="#" class="button adress">Ver endereço</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__header">
+                        <img
+                            src="./assets/img/perfil-2.jpg"
+                            alt="foto de mulher"
+                            class="card__img"
+                        />
+
+                        <div class="card__header__data">
+                            <h3 class="card__name">Luciana Dias</h3>
+
+                            <div class="card__apointment-type">
+                                <img
+                                    src="./assets/img/camera.svg"
+                                    alt="ícone de câmera"
+                                    class="apointment-type__img"
+                                />
+                                <span class="apointment-type__text"
+                                    >Consulta remota</span
+                                >
+                            </div>
+                        </div>
+
+                        <img
+                            src="./assets/img/chat.svg"
+                            alt="ícone de balão de conversa"
+                            class="card__chat"
+                        />
+                    </div>
+
+                    <hr class="card__division" />
+
+                    <div class="card__options">
+                        <span class="card__time">14:00 - 15:00 (1 hora)</span>
+
+                        <div class="card__buttons">
+                            <a href="#" class="button video-call"
+                                >Ligar por vídeo</a
+                            >
+                            <a href="#" class="button phone-call"
+                                >Ligar por áudio</a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__header">
+                        <img
+                            src="./assets/img/perfil-4.jpg"
+                            alt="foto de homem"
+                            class="card__img"
+                        />
+
+                        <div class="card__header__data">
+                            <h3 class="card__name">Marcos Correia</h3>
+
+                            <div class="card__apointment-type">
+                                <img
+                                    src="./assets/img/camera.svg"
+                                    alt="ícone de câmera"
+                                    class="apointment-type__img"
+                                />
+                                <span class="apointment-type__text"
+                                    >Consulta remota</span
+                                >
+                            </div>
+                        </div>
+
+                        <img
+                            src="./assets/img/chat.svg"
+                            alt="ícone de balão de conversa"
+                            class="card__chat"
+                        />
+                    </div>
+
+                    <hr class="card__division" />
+
+                    <div class="card__options">
+                        <span class="card__time"
+                            >17:20 - 18:00 (40 minutos)</span
+                        >
+
+                        <div class="card__buttons">
+                            <a href="#" class="button video-call"
+                                >Ligar por vídeo</a
+                            >
+                            <a href="#" class="button phone-call"
+                                >Ligar por áudio</a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card last">
+                    <div class="card__header">
+                        <img
+                            src="./assets/img/perfil-3.jpg"
+                            alt="foto de mulher"
+                            class="card__img"
+                        />
+
+                        <div class="card__header__data">
+                            <h3 class="card__name">Larissa Santana</h3>
+
+                            <div class="card__apointment-type">
+                                <img
+                                    src="./assets/img/pin.svg"
+                                    alt="ícone de pin de endereço"
+                                    class="apointment-type__img"
+                                />
+                                <span class="apointment-type__text"
+                                    >Consulta no local</span
+                                >
+                            </div>
+                        </div>
+
+                        <img
+                            src="./assets/img/chat.svg"
+                            alt="ícone de balão de conversa"
+                            class="card__chat"
+                        />
+                    </div>
+
+                    <hr class="card__division" />
+
+                    <div class="card__options">
+                        <span class="card__time">16:00 - 17:00 (1 hora)</span>
+
+                        <div class="card__buttons">
+                            <a href="#" class="button adress">Ver endereço</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="space"></div>
+
+        <div class="floating">
+            <input type="checkbox" id="new" class="floating-btn" />
+            <label for="new" class="floating__label">
+                <div class="floating">
+                    <img
+                        src="./assets/img/mais.svg"
+                        alt="Ícone de mais"
+                        class="floating-btn__img"
+                    />
+                </div>
+            </label>
+
+            <div class="house">
+                <img
+                    src="./assets/img/pinfab.svg"
+                    alt="Ícone de pin de localização"
+                    class="floating-btn__img-pin"
+                />
+            </div>
+
+            <div class="remote">
+                <img
+                    src="./assets/img/camerafab.svg"
+                    alt="Ícone de pin de localização"
+                    class="floating-btn__img-cam"
+                />
+            </div>
+
+            <div class="dark-screen"></div>
+        </div>
+
+        <footer class="footer">
+            <ul class="footer_options">
+                <li class="options__btn">
+                    <a href="#" class="option__link">
+                        <img
+                            src="./assets/img/calendario.svg"
+                            alt="Icone de calendário"
+                            class="options__icon"
+                        />
+                        <p class="options__text apointment">Consultas</p>
+                    </a>
+                </li>
+
+                <li class="options__btn">
+                    <a href="#" class="option__link">
+                        <img
+                            src="./assets/img/clientes.svg"
+                            alt="Icone de calendário"
+                            class="options__icon"
+                        />
+                        <p class="options__text">Clientes</p>
+                    </a>
+                </li>
+
+                <li class="options__btn">
+                    <a href="#" class="option__link">
+                        <img
+                            src="./assets/img/relatorios.svg"
+                            alt="Icone de calendário"
+                            class="options__icon"
+                        />
+                        <p class="options__text">Relatórios</p>
+                    </a>
+                </li>
+
+                <li class="options__btn">
+                    <a href="#" class="option__link">
+                        <img
+                            src="./assets/img/menu.svg"
+                            alt="Icone de calendário"
+                            class="options__icon"
+                        />
+                        <p class="options__text">Menu</p>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

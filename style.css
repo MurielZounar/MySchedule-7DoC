@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --bg-color: #eae7f0;
+    --card-bg-color: #ffffff;
+    --main-text-color: #464646;
+    --sec-text-color: #a3a3a3;
+    --btn-video-color: #ffb050;
+    --btn-phone-color: #ffb050;
+    --bt-address-color: #4894ff;
+    --main-font: "Montserrat", sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: var(--bg-color);
+    font-family: var(--main-font);
+    font-size: 1rem;
+}
+
+.header {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin: 2em 1em;
+}
+
+.header__profile-img {
+    width: 4em;
+    border-radius: 50%;
+}
+
+.info__hello {
+    color: var(--main-text-color);
+    font-size: 1.38rem;
+    font-weight: 700;
+    margin-bottom: 0.4em;
+}
+
+.info__text {
+    color: var(--sec-text-color);
+    font-size: 0.88rem;
+    font-weight: 400;
+}
+
+.day__text {
+    color: var(--main-text-color);
+    font-weight: 700;
+    margin: 2em 0 1em 1em;
+}
+
+.card {
+    width: 90%;
+    margin: 1em auto;
+    background-color: var(--card-bg-color);
+    border-radius: 15px;
+}
+
+.card__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.card__img {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    margin: 1em;
+}
+
+.card__name {
+    color: var(--main-text-color);
+    font-size: 0.88rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.card__apointment-type {
+    color: var(--sec-text-color);
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.card__chat {
+    width: 1em;
+    padding: 0.6em;
+    background-color: var(--bg-color);
+    border-radius: 45%;
+    margin: 0 1em 0 auto;
+}
+
+.card__division {
+}
+
+.card__options {
+    margin: 1em;
+}
+
+.card__time {
+    color: var(--main-text-color);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.card__buttons {
+    width: 100%;
+    margin: 0.5em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1em;
+}
+
+.button {
+    font-size: 0.88em;
+    font-weight: 500;
+    padding: 1.3em 1.5em;
+    border-radius: 0.63em;
+}
+
+.video-call {
+    color: var(--card-bg-color);
+    background-color: var(--btn-video-color);
+}
+
+.phone-call {
+    color: var(--main-text-color);
+    background-color: var(--card-bg-color);
+    border: solid 1px var(--sec-text-color);
+}
+
+.adress {
+    width: 100%;
+    color: var(--card-bg-color);
+    background-color: var(--bt-address-color);
+    text-align: center;
+}
+
+.dark-screen {
+    display: none;
+}
+
+.floating,
+.remote,
+.house {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 5em;
+    right: 1em;
+    background-color: var(--bt-address-color);
+    padding: 1.3em;
+    border-radius: 50%;
+    box-shadow: 0 0 0.5em var(--bt-address-color);
+    z-index: 1;
+}
+
+.floating-btn {
+    display: none;
+}
+
+.house,
+.remote {
+    display: none;
+    position: fixed;
+}
+
+.floating-btn:checked ~ .house {
+    display: block;
+    padding: 1.1em 1.3em;
+    bottom: 10em;
+}
+
+.floating-btn:checked ~ .remote {
+    display: block;
+    padding: 1.3em 1.15em;
+    bottom: 15em;
+}
+
+.floating-btn:checked ~ .dark-screen {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    padding: 100%;
+    top: 0;
+}
+
+.footer {
+    background-color: var(--card-bg-color);
+    padding: 0.5em;
+    border-radius: 1em 1em 0 0;
+    box-shadow: 0 0 0.5em var(--sec-text-color);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.footer_options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.option__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.options__text {
+    font-size: 0.75rem;
+    color: var(--sec-text-color);
+    margin-top: 0.7em;
+}
+
+.apointment {
+    color: var(--bt-address-color);
+}
+
+.space {
+    margin: 5em;
+}
+
+@media screen and (min-width: 1024px) {
+    .cards {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        gap: 0 1em;
+        margin: 1em;
+    }
+
+    .card {
+        width: 33%;
+        flex-grow: 1;
+    }
+
+    .last {
+        order: 3;
+        width: 50%;
+        margin-left: 0;
+        flex-grow: 0;
+    }
+
+    .video-call,
+    .phone-call {
+        width: 38%;
+        text-align: center;
+    }
+
+    .footer_options {
+        justify-content: center;
+        gap: 4em;
+    }
+
+    .floating {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    body {
+        width: 93%;
+        margin-left: 8em;
+    }
+
+    .day__text {
+        margin-left: 2em;
+    }
+
+    .card {
+        width: 30%;
+        margin-left: 1em;
+        flex-grow: 0;
+    }
+
+    .last {
+        width: 30%;
+        margin-left: 1.5em;
+    }
+
+    .video-call,
+    .phone-call {
+        width: 40%;
+        text-align: center;
+    }
+
+    .floating {
+        display: none;
+    }
+
+    .footer {
+        background-color: var(--card-bg-color);
+        padding: 1em;
+        border-radius: 0;
+        box-shadow: 0 0 0.5em var(--sec-text-color);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 93%;
+    }
+
+    .footer_options {
+        margin-top: 3em;
+        flex-direction: column;
+    }
+
+    .option__link {
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .options__text:hover {
+        color: var(--bt-address-color);
+    }
+}
